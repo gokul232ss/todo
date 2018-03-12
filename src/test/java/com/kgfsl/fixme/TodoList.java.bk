@@ -1,0 +1,20 @@
+package com.kgfsl.fixme;
+
+import com.kgfsl.fixme.model.Todo;
+
+import java.util.ArrayList;
+import java.util.List;
+
+class TodoList
+{
+ public List<Todo> firstTestMethod()
+ {
+     Todo todo1=new TodoBuilder().name("saritha").status("status1").priority("priority1").isCompleted(true).build();
+     Todo todo2=new TodoBuilder().name("subitha").status("status2").priority("priority2").isCompleted(false).build();
+     List<Todo> list=new ArrayList<Todo>();
+     list.add(todo1);
+     list.add(todo2);
+     return list;
+
+ }
+}
